@@ -1,10 +1,682 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Chicks & Cherry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chicks & Cherry | Premium Corporate Gifting</title>
+
+<meta name="description" content="Chicks & Cherry offers premium corporate gifting solutions in Delhi including customized gifts, employee welcome kits, diaries, hampers, bottles, pens and branded merchandise.">
+
+<meta name="keywords" content="corporate gifts Delhi, corporate gifting Delhi, customized corporate gifts, employee welcome kits, corporate gift hampers, Chicks and Cherry">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f7f4ed;
+  color:#151515;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#111;
+  padding:18px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #3d3220;
+}
+
+.logo{
+  color:#d8b56a;
+  font-family:Georgia,serif;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:white;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  font-size:13px;
+  letter-spacing:1px;
+}
+
+nav a:hover{
+  color:#d8b56a;
+}
+
+.hero{
+  min-height:88vh;
+  background:
+    radial-gradient(circle at 80% 20%,#4a3a20 0,transparent 30%),
+    linear-gradient(135deg,#111,#191919);
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:70px 8%;
+}
+
+.hero-content{
+  max-width:800px;
+}
+
+.tag{
+  color:#d8b56a;
+  letter-spacing:4px;
+  font-size:12px;
+  font-weight:bold;
+  margin-bottom:22px;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:clamp(50px,8vw,90px);
+  line-height:1;
+  font-weight:normal;
+  margin-bottom:25px;
+}
+
+h1 span{
+  color:#d8b56a;
+  font-style:italic;
+}
+
+.hero p{
+  max-width:650px;
+  color:#d2d2d2;
+  font-size:18px;
+  margin-bottom:35px;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 25px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+.gold{
+  background:#d8b56a;
+  color:#111;
+}
+
+.outline{
+  border:1px solid #777;
+  color:white;
+}
+
+section{
+  padding:90px 8%;
+}
+
+.section-title{
+  font-family:Georgia,serif;
+  font-size:50px;
+  font-weight:normal;
+  margin-bottom:15px;
+}
+
+.section-title span{
+  color:#b18b45;
+  font-style:italic;
+}
+
+.subtitle{
+  color:#777;
+  max-width:650px;
+  margin-bottom:45px;
+}
+
+.about{
+  background:white;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  background:#faf9f5;
+  border:1px solid #ddd6c8;
+  padding:35px;
+  min-height:230px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.card-number{
+  color:#b18b45;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+.card h3{
+  font-family:Georgia,serif;
+  font-size:27px;
+  margin:25px 0 10px;
+  font-weight:normal;
+}
+
+.card p{
+  color:#777;
+  font-size:14px;
+}
+
+.dark{
+  background:#151515;
+  color:white;
+}
+
+.dark .subtitle{
+  color:#aaa;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.feature{
+  border-top:1px solid #514936;
+  padding-top:20px;
+}
+
+.feature strong{
+  color:#d8b56a;
+}
+
+.feature h3{
+  font-family:Georgia,serif;
+  font-size:22px;
+  font-weight:normal;
+  margin:15px 0;
+}
+
+.feature p{
+  color:#aaa;
+  font-size:14px;
+}
+
+.cta{
+  text-align:center;
+  background:#e9dfca;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  font-size:52px;
+  font-weight:normal;
+  margin-bottom:25px;
+}
+
+.contact{
+  background:white;
+}
+
+.contact-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+}
+
+.contact-info p{
+  margin:18px 0;
+  color:#666;
+}
+
+.contact-info a{
+  color:#151515;
+  text-decoration:none;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+input,textarea{
+  width:100%;
+  padding:15px;
+  border:1px solid #ddd6c8;
+  background:#faf9f5;
+  font-family:Arial;
+}
+
+textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+button{
+  padding:16px;
+  border:none;
+  background:#111;
+  color:white;
+  cursor:pointer;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+footer{
+  background:#111;
+  color:#aaa;
+  text-align:center;
+  padding:40px 8%;
+}
+
+footer .logo{
+  margin-bottom:10px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25d366;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-weight:bold;
+  z-index:9999;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+@media(max-width:800px){
+
+  header{
+    padding:16px 5%;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    padding:65px 7%;
+    min-height:80vh;
+  }
+
+  h1{
+    font-size:54px;
+  }
+
+  section{
+    padding:70px 7%;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .contact-box{
+    grid-template-columns:1fr;
+  }
+
+  .section-title,
+  .cta h2{
+    font-size:42px;
+  }
+}
+
+@media(max-width:500px){
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:48px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+}
+</style>
 </head>
+
 <body>
-<h1>Chicks & Cherry</h1>
-<p>Premium Corporate Gifting Solutions</p>
+
+<header>
+  <div class="logo">Chicks <span>&amp; Cherry</span></div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gifts">Gifts</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="tag">PREMIUM CORPORATE GIFTING • DELHI</div>
+
+    <h1>
+      Gifts that make<br>
+      your brand <span>memorable.</span>
+    </h1>
+
+    <p>
+      Premium corporate gifts, employee kits and customized
+      branded merchandise designed to create a lasting impression.
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn gold"
+      href="https://wa.me/918745828962?text=Hi%20Chicks%20%26%20Cherry%2C%20I%20need%20a%20corporate%20gift%20quote."
+      target="_blank">
+      GET A QUOTE →
+      </a>
+
+      <a class="btn outline" href="#gifts">
+      EXPLORE GIFTS
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about" id="about">
+
+  <div class="tag">01 — ABOUT CHICKS &amp; CHERRY</div>
+
+  <h2 class="section-title">
+    Thoughtful gifts.<br>
+    <span>Professional impact.</span>
+  </h2>
+
+  <p class="subtitle">
+    Chicks &amp; Cherry provides corporate gifting solutions for
+    businesses looking for premium, useful and memorable gifts.
+    From employee welcome kits to festive hampers and branded
+    business essentials, we help you create the right gifting experience.
+  </p>
+
+</section>
+
+<section id="gifts">
+
+  <div class="tag">02 — OUR COLLECTIONS</div>
+
+  <h2 class="section-title">
+    Corporate gifting for<br>
+    <span>every occasion.</span>
+  </h2>
+
+  <p class="subtitle">
+    Choose from our popular categories or contact us for a
+    customized corporate gifting package.
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-number">01</div>
+      <h3>Executive Diaries</h3>
+      <p>Elegant diaries, notebooks and planners for professional teams.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">02</div>
+      <h3>Employee Welcome Kits</h3>
+      <p>Thoughtfully curated kits for welcoming new employees.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">03</div>
+      <h3>Corporate Hampers</h3>
+      <p>Premium gift combinations for clients, teams and partners.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">04</div>
+      <h3>Bottles &amp; Mugs</h3>
+      <p>Useful everyday products customized with your brand.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">05</div>
+      <h3>Pens &amp; Stationery</h3>
+      <p>Professional branded essentials for business gifting.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-number">06</div>
+      <h3>Festive &amp; Custom Gifts</h3>
+      <p>Customized gifting for festivals, events and special occasions.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="dark" id="why">
+
+  <div class="tag">03 — WHY CHICKS &amp; CHERRY</div>
+
+  <h2 class="section-title">
+    Built for <span>business.</span>
+  </h2>
+
+  <p class="subtitle">
+    A professional gifting partner for companies that care about
+    presentation, branding and the experience behind every gift.
+  </p>
+
+  <div class="features">
+
+    <div class="feature">
+      <strong>01</strong>
+      <h3>Custom Branding</h3>
+      <p>Your logo and brand identity can be incorporated into your gifting requirements.</p>
+    </div>
+
+    <div class="feature">
+      <strong>02</strong>
+      <h3>Bulk Orders</h3>
+      <p>Solutions for corporate teams, events, employees and clients.</p>
+    </div>
+
+    <div class="feature">
+      <strong>03</strong>
+      <h3>Curated Selection</h3>
+      <p>Practical and premium gift options for different occasions and budgets.</p>
+    </div>
+
+    <div class="feature">
+      <strong>04</strong>
+      <h3>Personal Support</h3>
+      <p>Discuss your quantity, budget and requirements directly with us.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <div class="tag">LET'S CREATE SOMETHING MEMORABLE</div>
+
+  <h2>
+    Have a corporate<br>
+    gifting requirement?
+  </h2>
+
+  <a class="btn gold"
+  href="https://wa.me/918745828962?text=Hi%20Chicks%20%26%20Cherry%2C%20I%20want%20to%20discuss%20a%20corporate%20gifting%20requirement."
+  target="_blank">
+  CHAT ON WHATSAPP →
+  </a>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="tag">04 — CONTACT</div>
+
+  <div class="contact-box">
+
+    <div class="contact-info">
+
+      <h2 class="section-title">
+        Let's create a<br>
+        <span>great first impression.</span>
+      </h2>
+
+      <p>
+        Tell us what you are looking for and we'll help you plan
+        your corporate gifting requirement.
+      </p>
+
+      <p>
+        <strong>Phone / WhatsApp</strong><br>
+        <a href="tel:+918745828962">+91 87458 28962</a>
+      </p>
+
+      <p>
+        <strong>Email</strong><br>
+        <a href="mailto:chickscherrygifts@gmail.com">
+        chickscherrygifts@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Location</strong><br>
+        Burari, Delhi
+      </p>
+
+    </div>
+
+    <form onsubmit="sendWhatsApp(event)">
+
+      <input id="name" type="text" placeholder="Your Name" required>
+
+      <input id="company" type="text" placeholder="Company Name">
+
+      <input id="email" type="email" placeholder="Email Address" required>
+
+      <input id="quantity" type="text" placeholder="Approx. Quantity">
+
+      <textarea id="message" placeholder="Tell us about your requirement"></textarea>
+
+      <button type="submit">
+        REQUEST A QUOTE →
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="logo">
+    Chicks <span>&amp; Cherry</span>
+  </div>
+
+  <p>
+    Premium Corporate Gifting Solutions • Burari, Delhi
+  </p>
+
+  <p>
+    © 2026 Chicks &amp; Cherry. All Rights Reserved.
+  </p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/918745828962?text=Hi%20Chicks%20%26%20Cherry%2C%20I%20need%20a%20corporate%20gift%20quote."
+target="_blank"
+aria-label="WhatsApp">
+WA
+</a>
+
+<script>
+
+function sendWhatsApp(event){
+
+  event.preventDefault();
+
+  const name =
+  document.getElementById("name").value;
+
+  const company =
+  document.getElementById("company").value;
+
+  const email =
+  document.getElementById("email").value;
+
+  const quantity =
+  document.getElementById("quantity").value;
+
+  const message =
+  document.getElementById("message").value;
+
+  const text =
+  "Hi Chicks & Cherry,%0A%0A" +
+  "Name: " + encodeURIComponent(name) + "%0A" +
+  "Company: " + encodeURIComponent(company) + "%0A" +
+  "Email: " + encodeURIComponent(email) + "%0A" +
+  "Quantity: " + encodeURIComponent(quantity) + "%0A" +
+  "Requirement: " + encodeURIComponent(message);
+
+  window.open(
+    "https://wa.me/918745828962?text=" + text,
+    "_blank"
+  );
+}
+
+</script>
+
 </body>
-</html>
+      </html>
